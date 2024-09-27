@@ -163,6 +163,9 @@ section {
 
 .section-container {
     display: flex;
+    justify-content: space-between; /* Ensures space is distributed between the image and text */
+    align-items: center;            /* Vertically aligns image and text */
+    gap: 20px;                      /* Adds space between the image and the text */
 }
 
 
@@ -260,3 +263,25 @@ section {
     background: rgb(53, 53, 53);
     color: rgb(253, 242, 233);
 }
+
+/* Text container */
+.about-details-container {
+    flex-grow: 1;                   /* Allows the text container to grow and take available space */
+    padding-left: 20px;             /* Adds space between the image and text */
+    font-size: 20px;
+    line-height: 1.6;               /* Improves readability */
+}
+
+.section__about-pic-container {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    height: 400px;
+    width: 400px;
+    margin-left: auto;    /* Ensures image is aligned to the right */
+}
+
+.section__about-pic-container img {
+    width: 100%;
+    height: auto;
+}
+
+
