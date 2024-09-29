@@ -164,7 +164,7 @@ section {
 .section-container {
     display: flex;
     justify-content: space-between; /* Ensures space is distributed between the image and text */
-    align-items: center;            /* Vertically aligns image and text */
+    align-items: top;            /* Vertically aligns image and text */
     gap: 20px;                      /* Adds space between the image and the text */
 }
 
@@ -276,7 +276,7 @@ section {
     flex-shrink: 0; /* Prevents the image from shrinking */
     height: 400px;
     width: 400px;
-    margin-left: auto;    /* Ensures image is aligned to the right */
+    margin: 0 auto;
 }
 
 .section__about-pic-container img {
