@@ -264,7 +264,14 @@ section {
     color: rgb(253, 242, 233);
 }
 
-/* Text container */
+/* About Section */
+
+.section-container {
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}  
+
 .about-details-container {
     flex-grow: 1;                   /* Allows the text container to grow and take available space */
     padding-left: 20px;             /* Adds space between the image and text */
@@ -284,4 +291,9 @@ section {
     height: auto;
 }
 
-
+.icon-arrow {
+    display: block;
+    margin: 20px auto; /* Centers the arrow */
+    width: 40px; /* Adjust the size of the arrow */
+    cursor: pointer; /* Adds a pointer cursor on hover */
+  }
