@@ -14,9 +14,10 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <!-- <li><a href="#experience">Experience</a></li> -->
           <li><a href="#projects">Projects</a></li>
           <li><a href="#blog">Blog</a></li>
+          <li><a href="#contacts">Contacts</a></li>
         </ul>
       </div>
     </nav>
@@ -30,7 +31,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <!-- <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> -->
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
         </div>
@@ -43,16 +44,16 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Nico Drobe</h1>
-        <p class="section__text__p2">Software Engineer & Tech Enthusiast</p>
+        <p class="section__text__p2">Engineer | Tech Enthusiast | Traveller</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
             onclick="window.open('./assets/cv-sample.pdf')"
           >
-            Download CV
+            Resume
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
+            Contact Me
           </button>
         </div>
         <div id="socials-container">
@@ -67,7 +68,7 @@
       </div>
     </section>
     <section id="about">
-      <p class="section__text__p1">Get To Know Me More</p>
+      <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="about-details-container">
@@ -76,20 +77,19 @@
             apprenticeship as an Electronics Technician for Automation
             Technology. I later pursued a degree in Mechatronic Engineering,
             where I discovered my passion for software engineering. This passion
-            developed during small university projects, such as developing
-            software to record and analyze electrocardiogram (ECG) signals using
-            a small hardware platform. <br /><br />These experiences sparked my
-            interest in creating innovative software solutions, which led me to
-            a Data & AI internship at an German IT project center. There, I
-            deepened my knowledge and practical experience in collaborative
-            software development. My growing interest in AI led me to complete
-            my thesis, where I developed an AI-based energy and dynamics
-            prediction system for electric vehicles. <br /><br />
+            developed during small university projects.<br /><br />These
+            projects sparked my interest in creating innovative software
+            solutions, which led me to an internship within the IT-industry.
+            There, I deepened my knowledge and practical experience in
+            collaborative software development. With my growing interest in AI,
+            I decided to complete my thesis within the same field, where I
+            developed an AI-based energy and dynamics prediction system for
+            electric vehicles. <br /><br />
 
-            Currently, I'm traveling around the world, exploring new cultures
-            and perspectives. This journey not only enriches my personal life
-            but also inspires my professional growth as I seek to integrate
-            diverse ideas into my work.
+            After my graduation I decided to travel around the world while
+            constantely learning new technologies. This journey not only
+            enriches my personal life but also inspires my professional growth.
+            At the moment, I am particularly interested in cloud computing.
           </p>
         </div>
         <div class="section__about-pic-container">
@@ -104,9 +104,103 @@
         src="./assets/arrow-icon.png"
         alt="Arrow icon"
         class="icon-arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='./#projects'"
       />
     </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Projects</h1>
+      <div class="project-details-container">
+        <!-- Project 1 -->
+        <div class="details-containers color-containers">
+          <div class="article-container">
+            <img
+              src="./assets/project-1.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Development of an AI-based Energy and Dynamics Prediction
+          </h2>
+          <div class="btn-container1">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="details-containers color-containers">
+          <div class="article-container">
+            <img
+              src="./assets/project-2.jpg"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Web App Demonstrator for Transfomer Language Models
+          </h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="details-containers color-containers">
+          <div class="article-container">
+            <img
+              src="./assets/project-3.png"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Development of a Chatbot with the Open Source Framework Rasa
+          </h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="details-containers color-containers">
+          <div class="article-container">
+            <img
+              src="./assets/project-4.png"
+              alt="Project 4"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Development of an ECG Data Processing System Using an ESP8266
+          </h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>
