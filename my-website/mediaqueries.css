@@ -1,3 +1,12 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }  
+}
 /* If desktop resolution is lower then 1200px, desktop-nav is gonna disappear */
 @media screen and (max-width: 1200px) {
     #desktop-nav {
@@ -5,5 +14,90 @@
     }
     #mobile-nav {
         display: flex;
+    }
+    #profile, .section-container {
+        display: block;
+    }
+    #about {
+        margin-top: 10rem; /* Add margin to avoid overlap with profile */
+    }
+    .arrow, .icon-arrow {
+        display: none;
+    }
+    section, .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 6.5rem;
+    }
+    .about-containers {
+        margin-top: 0;
+    }
+}
+
+/* If desktop resolution is lower then 600px */
+@media screen and (max-width: 600px) {
+    nav {
+        justify-content: space-around;
+        align-items: center;
+        height: 8vh; /* view height */
+    }
+    #contact, footer {
+        height: 40vh;
+    }
+    #profile {
+        min-height: 83vh;
+        margin-bottom: 0;
+    }
+    #about {
+        margin-top: 5rem; /* Add margin to avoid overlap with profile */
+    }
+
+    .section__pic-container {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 6.5rem;
+    }
+
+    .section__text {
+        align-self: center;
+        text-align: center;
+    }
+    
+    .section__text p {
+        font-weight: 400;
+    }
+    
+    .section__text__p1 {
+        text-align: center;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .section__text__p2 {
+        text-align: center;
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+    article {
+        font-size: 1rem;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-containers, .contact-info-upper-container, .btn-container {
+        flex-wrap: wrap;
+    }
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-container p, .nav-links li a {
+        font-size: 1rem;
     }
 }
