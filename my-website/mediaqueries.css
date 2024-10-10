@@ -15,9 +15,15 @@
     #mobile-nav {
         display: flex;
     }
-    #profile, .section-container {
+    #profile {
         display: block;
     }
+/* Stack image above the text */
+    .section-container {
+        display: flex;
+        flex-direction: column-reverse; /* Stack picture above text vertically */
+        align-items: center; /* Center the content horizontally */
+        }
     #about {
         margin-top: 10rem; /* Add margin to avoid overlap with profile */
     }
@@ -35,8 +41,15 @@
         height: 275px;
         margin: 0 auto 6.5rem;
     }
-    .about-containers {
-        margin-top: 0;
+    .section__about-pic-container {
+        display: flex; /* Enable flexbox for centering */
+        justify-content: center; /* Horizontally center the image */
+        align-items: center; /* Vertically center if necessary */
+        margin-bottom: 0; /* Space between image and text */
+    }
+
+    .section__about-pic-container img {
+        width: 90%;
     }
 }
 
@@ -55,7 +68,7 @@
         margin-bottom: 0;
     }
     #about {
-        margin-top: 5rem; /* Add margin to avoid overlap with profile */
+        margin-top: 4rem; /* Add margin to avoid overlap with profile */
     }
 
     .section__pic-container {
@@ -94,10 +107,16 @@
     .about-containers, .contact-info-upper-container, .btn-container {
         flex-wrap: wrap;
     }
+    .about-details-container {
+        text-align: justify;
+    }
     .contact-info-container {
         margin: 0;
     }
     .contact-info-container p, .nav-links li a {
         font-size: 1rem;
+    }
+    .nav-links li a {
+        font-size: 1.5rem;
     }
 }
